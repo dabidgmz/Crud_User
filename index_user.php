@@ -7,7 +7,7 @@ $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
 $offset = ($current_page - 1) * $records_per_page;
 
 $conexion = new Conexion();
-
+//cambio
 $users = [];
 try {
     $sql = "SELECT * FROM User LIMIT :offset, :records_per_page";
